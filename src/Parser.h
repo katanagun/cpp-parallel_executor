@@ -37,7 +37,18 @@ private:
    * \param loop_count Беззнаковое целое число, задающее кол-во итераций чтения с устройства.
    * \param crush_index Целое число, указывающая на какой итерации сломается устройство.
   */
-  void read(std::shared_ptr<Device> device, std::chrono::seconds sleep_duration, size_t loop_count, int crush_index);
+  void read(std::shared_ptr<Device> device, std::chrono::seconds sleep_duration, size_t loop_count, int crush_index){
+    for (int i = 0; i < loop_count; i++){
+      if (i == crush_index){
+        break;
+      }
+      else{
+        
+      }
+      
+    }
+    
+  };
 
 private:
   std::shared_ptr<EventQueue> queue;

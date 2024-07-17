@@ -15,6 +15,7 @@ class EventQueue
 {
 public:
   void push(const std::shared_ptr<const Event> & event){
+    
     std::unique_lock<std::mutex> lock(mutex);
     queue.push(event);
     cv.notify_one();
