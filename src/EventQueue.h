@@ -24,7 +24,9 @@ public:
   std::shared_ptr<const Event> pop(const std::chrono::seconds & duration){
     std::unique_lock<std::mutex> lock(mutex);
     if (cv.wait_for(lock, duration, [this]{return !queue.empty(); })){
+      auto event = queue.front();
       queue.pop();
+      return event;
     }
     else{
       return nullptr;
