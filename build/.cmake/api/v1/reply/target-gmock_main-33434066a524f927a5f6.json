@@ -21,8 +21,8 @@
 		],
 		"files" : 
 		[
-			"googletest/googletest/cmake/internal_utils.cmake",
-			"googletest/googlemock/CMakeLists.txt",
+			"test/googletest/googletest/cmake/internal_utils.cmake",
+			"test/googletest/googlemock/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -102,22 +102,22 @@
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/googletest/googlemock/include"
+					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/test/googletest/googlemock/include"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/googletest/googlemock"
+					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/test/googletest/googlemock"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/googletest/googletest/include"
+					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/test/googletest/googletest/include"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/googletest/googletest"
+					"path" : "/home/bvahrin/tasks/cpp-parallel_executor/test/googletest/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -131,14 +131,14 @@
 	[
 		{
 			"backtrace" : 6,
-			"id" : "gmock::@d68da25237a7ca2351af"
+			"id" : "gmock::@58e68f9ebf37c5473ec5"
 		},
 		{
 			"backtrace" : 6,
-			"id" : "gtest::@f95b5c00bd49b3b4698d"
+			"id" : "gtest::@0c41a4af7da23b8d478e"
 		}
 	],
-	"id" : "gmock_main::@d68da25237a7ca2351af",
+	"id" : "gmock_main::@58e68f9ebf37c5473ec5",
 	"install" : 
 	{
 		"destinations" : 
@@ -157,8 +157,8 @@
 	"nameOnDisk" : "libgmock_main.a",
 	"paths" : 
 	{
-		"build" : "googletest/googlemock",
-		"source" : "googletest/googlemock"
+		"build" : "test/googletest/googlemock",
+		"source" : "test/googletest/googlemock"
 	},
 	"sourceGroups" : 
 	[
@@ -175,7 +175,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "googletest/googlemock/src/gmock_main.cc",
+			"path" : "test/googletest/googlemock/src/gmock_main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

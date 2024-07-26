@@ -8,8 +8,8 @@
 		],
 		"files" : 
 		[
-			"googletest/googletest/CMakeLists.txt",
-			"googletest/googletest/cmake/internal_utils.cmake"
+			"test/googletest/googletest/CMakeLists.txt",
+			"test/googletest/googletest/cmake/internal_utils.cmake"
 		],
 		"nodes" : 
 		[
@@ -70,25 +70,25 @@
 			"exportTargets" : 
 			[
 				{
-					"id" : "gtest::@f95b5c00bd49b3b4698d",
-					"index" : 2
-				},
-				{
-					"id" : "gtest_main::@f95b5c00bd49b3b4698d",
+					"id" : "gtest::@0c41a4af7da23b8d478e",
 					"index" : 3
 				},
 				{
-					"id" : "gmock::@d68da25237a7ca2351af",
-					"index" : 0
+					"id" : "gtest_main::@0c41a4af7da23b8d478e",
+					"index" : 4
 				},
 				{
-					"id" : "gmock_main::@d68da25237a7ca2351af",
+					"id" : "gmock::@58e68f9ebf37c5473ec5",
 					"index" : 1
+				},
+				{
+					"id" : "gmock_main::@58e68f9ebf37c5473ec5",
+					"index" : 2
 				}
 			],
 			"paths" : 
 			[
-				"googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake"
+				"test/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake"
 			],
 			"type" : "export"
 		},
@@ -98,8 +98,8 @@
 			"destination" : "lib/cmake/GTest",
 			"paths" : 
 			[
-				"build/googletest/googletest/generated/GTestConfigVersion.cmake",
-				"build/googletest/googletest/generated/GTestConfig.cmake"
+				"build/test/googletest/googletest/generated/GTestConfigVersion.cmake",
+				"build/test/googletest/googletest/generated/GTestConfig.cmake"
 			],
 			"type" : "file"
 		},
@@ -110,7 +110,7 @@
 			"paths" : 
 			[
 				{
-					"from" : "googletest/googletest/include",
+					"from" : "test/googletest/googletest/include",
 					"to" : "."
 				}
 			],
@@ -124,8 +124,8 @@
 			[
 				"lib/libgtest.a"
 			],
-			"targetId" : "gtest::@f95b5c00bd49b3b4698d",
-			"targetIndex" : 2,
+			"targetId" : "gtest::@0c41a4af7da23b8d478e",
+			"targetIndex" : 3,
 			"type" : "target"
 		},
 		{
@@ -136,8 +136,8 @@
 			[
 				"lib/libgtest_main.a"
 			],
-			"targetId" : "gtest_main::@f95b5c00bd49b3b4698d",
-			"targetIndex" : 3,
+			"targetId" : "gtest_main::@0c41a4af7da23b8d478e",
+			"targetIndex" : 4,
 			"type" : "target"
 		},
 		{
@@ -146,7 +146,7 @@
 			"destination" : "lib/pkgconfig",
 			"paths" : 
 			[
-				"build/googletest/googletest/generated/gtest.pc"
+				"build/test/googletest/googletest/generated/gtest.pc"
 			],
 			"type" : "file"
 		},
@@ -156,14 +156,14 @@
 			"destination" : "lib/pkgconfig",
 			"paths" : 
 			[
-				"build/googletest/googletest/generated/gtest_main.pc"
+				"build/test/googletest/googletest/generated/gtest_main.pc"
 			],
 			"type" : "file"
 		}
 	],
 	"paths" : 
 	{
-		"build" : "googletest/googletest",
-		"source" : "googletest/googletest"
+		"build" : "test/googletest/googletest",
+		"source" : "test/googletest/googletest"
 	}
 }

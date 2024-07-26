@@ -7,6 +7,6 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 
 enable_testing()
 
-add_subdirectory(src)
 add_subdirectory(test)
-add_subdirectory(googletest)
+
+add_executable(main ${CMAKE_SOURCE_DIR}/src/main.cpp)

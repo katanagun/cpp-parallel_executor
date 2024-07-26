@@ -1,11 +1,10 @@
-set(BINARY ${CMAKE_PROJECT_NAME}_tst)
+cmake_minimum_required(VERSION 3.15.0)
 
-file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false false *.h *.cpp)
+project(parallel_executor VERSION 1.0.0 DESCRIPTION "Синхронизация нескольких потоков исполнения через очередь сообщений на C++")
 
-set(SOURCES ${TEST_SOURCES})
+enable_testing()
+add_subdirectory(googletest)
+add_executable(test_app main.cpp)
+target_link_libraries(test_app gtest_main gmock_main)
 
-add_executable(${BINARY} ${TEST_SOURCES})
-
-add_test(NAME ${BINARY} COMMAND ${BINARY})
-
-target_link_libraries(${BINARY} PUBLIC ${CMAKE_PROJECT_NAME}_lib gtest)
+add_test(NAME Test1 COMMAND Test_Device)

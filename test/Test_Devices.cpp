@@ -2,6 +2,8 @@
 #include "DeviceB.h"
 
 #include <gtest/gtest.h>
+#include "googletest/googlemock/include/gmock/gmock.h"
+#include "googletest/googletest/include/gtest/gtest.h"
 
 TEST(DeviceA, GetNameTest)
 {

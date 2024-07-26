@@ -1051,7 +1051,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1571,7 +1571,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/googletest/googletest/generated"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/test/googletest/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1583,7 +1583,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/googletest/googlemock"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/test/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1607,7 +1607,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/googletest/googlemock"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/test/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1635,7 +1635,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/googletest"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/test/googletest"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1659,7 +1659,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/googletest"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/test/googletest"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1671,7 +1671,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/googletest/googletest"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/test/googletest/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1695,7 +1695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/googletest/googletest"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/test/googletest/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",
@@ -1787,7 +1787,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/test"
 		},
 		{
 			"name" : "parallel_executor_IS_TOP_LEVEL",
@@ -1799,7 +1799,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "parallel_executor_SOURCE_DIR",
@@ -1811,7 +1811,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/test"
 		},
 		{
 			"name" : "targets_export_name",

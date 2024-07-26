@@ -765,13 +765,10 @@
 			"path" : "build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
 		},
 		{
-			"path" : "src/CMakeLists.txt"
-		},
-		{
 			"path" : "test/CMakeLists.txt"
 		},
 		{
-			"path" : "googletest/CMakeLists.txt"
+			"path" : "test/googletest/CMakeLists.txt"
 		},
 		{
 			"isCMake" : true,
@@ -784,7 +781,7 @@
 			"path" : "/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
 		},
 		{
-			"path" : "googletest/googlemock/CMakeLists.txt"
+			"path" : "test/googletest/googlemock/CMakeLists.txt"
 		},
 		{
 			"isCMake" : true,
@@ -817,16 +814,16 @@
 			"path" : "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
 		},
 		{
-			"path" : "googletest/googlemock/cmake/gmock.pc.in"
+			"path" : "test/googletest/googlemock/cmake/gmock.pc.in"
 		},
 		{
-			"path" : "googletest/googlemock/cmake/gmock_main.pc.in"
+			"path" : "test/googletest/googlemock/cmake/gmock_main.pc.in"
 		},
 		{
-			"path" : "googletest/googletest/CMakeLists.txt"
+			"path" : "test/googletest/googletest/CMakeLists.txt"
 		},
 		{
-			"path" : "googletest/googletest/cmake/internal_utils.cmake"
+			"path" : "test/googletest/googletest/cmake/internal_utils.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -879,13 +876,13 @@
 			"path" : "/usr/share/cmake-3.28/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
 		},
 		{
-			"path" : "googletest/googletest/cmake/Config.cmake.in"
+			"path" : "test/googletest/googletest/cmake/Config.cmake.in"
 		},
 		{
-			"path" : "googletest/googletest/cmake/gtest.pc.in"
+			"path" : "test/googletest/googletest/cmake/gtest.pc.in"
 		},
 		{
-			"path" : "googletest/googletest/cmake/gtest_main.pc.in"
+			"path" : "test/googletest/googletest/cmake/gtest_main.pc.in"
 		}
 	],
 	"kind" : "cmakeFiles",
