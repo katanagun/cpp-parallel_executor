@@ -81,8 +81,8 @@ clean: test/clean
 # Directory level rules for directory src/parallel_executor
 
 # Recursive "all" directory target.
-src/parallel_executor/all: src/parallel_executor/CMakeFiles/parallel_executor_run.dir/all
 src/parallel_executor/all: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all
+src/parallel_executor/all: src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/all
 .PHONY : src/parallel_executor/all
 
 # Recursive "preinstall" directory target.
@@ -90,8 +90,8 @@ src/parallel_executor/preinstall:
 .PHONY : src/parallel_executor/preinstall
 
 # Recursive "clean" directory target.
-src/parallel_executor/clean: src/parallel_executor/CMakeFiles/parallel_executor_run.dir/clean
 src/parallel_executor/clean: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/clean
+src/parallel_executor/clean: src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean
 .PHONY : src/parallel_executor/clean
 
 #=============================================================================
@@ -163,44 +163,18 @@ test/googletest/googletest/clean: test/googletest/googletest/CMakeFiles/gtest_ma
 .PHONY : test/googletest/googletest/clean
 
 #=============================================================================
-# Target rules for target src/parallel_executor/CMakeFiles/parallel_executor_run.dir
-
-# All Build rule for target.
-src/parallel_executor/CMakeFiles/parallel_executor_run.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_run.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_run.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_run.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=11,12 "Built target parallel_executor_run"
-.PHONY : src/parallel_executor/CMakeFiles/parallel_executor_run.dir/all
-
-# Build rule for subdir invocation for target.
-src/parallel_executor/CMakeFiles/parallel_executor_run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
-.PHONY : src/parallel_executor/CMakeFiles/parallel_executor_run.dir/rule
-
-# Convenience name for target.
-parallel_executor_run: src/parallel_executor/CMakeFiles/parallel_executor_run.dir/rule
-.PHONY : parallel_executor_run
-
-# clean rule for target.
-src/parallel_executor/CMakeFiles/parallel_executor_run.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_run.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_run.dir/clean
-.PHONY : src/parallel_executor/CMakeFiles/parallel_executor_run.dir/clean
-
-#=============================================================================
 # Target rules for target src/parallel_executor/CMakeFiles/parallel_executor_lib.dir
 
 # All Build rule for target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=9,10 "Built target parallel_executor_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target parallel_executor_lib"
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all
 
 # Build rule for subdir invocation for target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule
@@ -215,6 +189,32 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/clean:
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/clean
 
 #=============================================================================
+# Target rules for target src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir
+
+# All Build rule for target.
+src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/all: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=14,15 "Built target parallel_executor_lib_executable"
+.PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/all
+
+# Build rule for subdir invocation for target.
+src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
+.PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule
+
+# Convenience name for target.
+parallel_executor_lib_executable: src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule
+.PHONY : parallel_executor_lib_executable
+
+# clean rule for target.
+src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean
+.PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/test_app.dir
 
 # All Build rule for target.
@@ -224,7 +224,7 @@ test/CMakeFiles/test_app.dir/all: test/googletest/googletest/CMakeFiles/gtest.di
 test/CMakeFiles/test_app.dir/all: test/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_app.dir/build.make test/CMakeFiles/test_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_app.dir/build.make test/CMakeFiles/test_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=13,14 "Built target test_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=16,17 "Built target test_app"
 .PHONY : test/CMakeFiles/test_app.dir/all
 
 # Build rule for subdir invocation for target.

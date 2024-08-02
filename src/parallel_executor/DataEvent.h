@@ -7,6 +7,7 @@ class DataEvent : public DeviceEvent
 {
 public:
   DataEvent(std::shared_ptr<Device> device);
+  
   std::string toString() const override{
     return device.get()->getDataAsString() + "from" + device.get()->getName();
   };

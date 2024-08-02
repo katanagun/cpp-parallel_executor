@@ -5,8 +5,8 @@
 /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles/install.dir
 /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles/install/local.dir
 /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles/install/strip.dir
-/home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/parallel_executor_run.dir
 /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/parallel_executor_lib.dir
+/home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir
 /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/test.dir
 /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/edit_cache.dir
 /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/rebuild_cache.dir

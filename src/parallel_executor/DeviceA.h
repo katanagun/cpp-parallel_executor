@@ -8,6 +8,7 @@ class DeviceA : public Device
 {
 public:
   std::string getName() override { return "A"; };
+  
   std::string getDataAsString() override {
     srand(time(NULL));
     static std::string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";

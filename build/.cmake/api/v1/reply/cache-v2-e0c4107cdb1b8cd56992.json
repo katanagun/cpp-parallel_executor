@@ -1787,7 +1787,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/test"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build"
 		},
 		{
 			"name" : "parallel_executor_IS_TOP_LEVEL",
@@ -1799,10 +1799,46 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "parallel_executor_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor"
+		},
+		{
+			"name" : "parallel_executor_tests_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/test"
+		},
+		{
+			"name" : "parallel_executor_tests_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "parallel_executor_tests_SOURCE_DIR",
 			"properties" : 
 			[
 				{

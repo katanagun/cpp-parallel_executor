@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DataEvent.cpp" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o" "gcc" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o.d"
+  "/home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/StartedEvent.cpp" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o" "gcc" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o.d"
+  "/home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.cpp" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o" "gcc" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o.d"
   "/home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o" "gcc" "src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o.d"
   )
 

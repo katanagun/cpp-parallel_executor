@@ -172,19 +172,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named parallel_executor_run
-
-# Build rule for target.
-parallel_executor_run: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parallel_executor_run
-.PHONY : parallel_executor_run
-
-# fast build rule for target.
-parallel_executor_run/fast:
-	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_run.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_run.dir/build
-.PHONY : parallel_executor_run/fast
-
-#=============================================================================
 # Target rules for targets named parallel_executor_lib
 
 # Build rule for target.
@@ -196,6 +183,19 @@ parallel_executor_lib: cmake_check_build_system
 parallel_executor_lib/fast:
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build
 .PHONY : parallel_executor_lib/fast
+
+#=============================================================================
+# Target rules for targets named parallel_executor_lib_executable
+
+# Build rule for target.
+parallel_executor_lib_executable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parallel_executor_lib_executable
+.PHONY : parallel_executor_lib_executable
+
+# fast build rule for target.
+parallel_executor_lib_executable/fast:
+	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build
+.PHONY : parallel_executor_lib_executable/fast
 
 #=============================================================================
 # Target rules for targets named test_app
@@ -280,7 +280,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... parallel_executor_lib"
-	@echo "... parallel_executor_run"
+	@echo "... parallel_executor_lib_executable"
 	@echo "... test_app"
 .PHONY : help
 

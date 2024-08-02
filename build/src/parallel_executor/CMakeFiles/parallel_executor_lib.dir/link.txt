@@ -1,2 +1,2 @@
-/usr/bin/ar qc libparallel_executor_lib.a CMakeFiles/parallel_executor_lib.dir/main.cpp.o
+/usr/bin/ar qc libparallel_executor_lib.a CMakeFiles/parallel_executor_lib.dir/main.cpp.o CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o
 /usr/bin/ranlib libparallel_executor_lib.a

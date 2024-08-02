@@ -8,6 +8,7 @@ class DeviceB : public Device
 {
 public:
   std::string getName() override { return "B"; };
+  
   std::string getDataAsString() override {
     srand(time(NULL));
     std::string result;

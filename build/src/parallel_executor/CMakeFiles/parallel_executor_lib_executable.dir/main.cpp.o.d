@@ -1,4 +1,4 @@
-src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o: \
+src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o: \
  /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp \
  /usr/include/stdc-predef.h \
  /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.h \

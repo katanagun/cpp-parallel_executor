@@ -1,8 +1,8 @@
-src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o: \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp \
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o: \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.cpp \
  /usr/include/stdc-predef.h \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.h \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/EventQueue.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.h \
  /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Event.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -118,6 +118,7 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Device.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
@@ -155,24 +156,4 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o: \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/chrono \
- /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
- /usr/include/c++/13/cstdint /usr/include/c++/13/limits \
- /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/c++/13/queue /usr/include/c++/13/deque \
- /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/stl_queue.h /usr/include/c++/13/mutex \
- /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
- /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h \
- /usr/include/c++/13/condition_variable \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Device.h \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/StartedEvent.h \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.h \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DataEvent.h \
- /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.h \
- /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
- /usr/include/c++/13/bits/this_thread_sleep.h
+ /usr/include/c++/13/pstl/execution_defs.h

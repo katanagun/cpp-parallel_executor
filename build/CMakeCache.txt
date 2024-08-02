@@ -336,13 +336,22 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_hide_internal_symbols:BOOL=OFF
 
 //Value Computed by CMake
-parallel_executor_BINARY_DIR:STATIC=/home/bvahrin/tasks/cpp-parallel_executor/build/test
+parallel_executor_BINARY_DIR:STATIC=/home/bvahrin/tasks/cpp-parallel_executor/build
 
 //Value Computed by CMake
-parallel_executor_IS_TOP_LEVEL:STATIC=OFF
+parallel_executor_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-parallel_executor_SOURCE_DIR:STATIC=/home/bvahrin/tasks/cpp-parallel_executor/test
+parallel_executor_SOURCE_DIR:STATIC=/home/bvahrin/tasks/cpp-parallel_executor
+
+//Value Computed by CMake
+parallel_executor_tests_BINARY_DIR:STATIC=/home/bvahrin/tasks/cpp-parallel_executor/build/test
+
+//Value Computed by CMake
+parallel_executor_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+parallel_executor_tests_SOURCE_DIR:STATIC=/home/bvahrin/tasks/cpp-parallel_executor/test
 
 
 ########################
