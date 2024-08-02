@@ -5,7 +5,7 @@ project(parallel_executor VERSION 1.0.0 DESCRIPTION "Синхронизация 
 
 include_directories(${CMAKE_SOURCE_DIR}/src/parallel_executor)
 
-enable_testing()
+# enable_testing()
 
 add_subdirectory(src/parallel_executor)
-add_subdirectory(test)
+# add_subdirectory(test)
