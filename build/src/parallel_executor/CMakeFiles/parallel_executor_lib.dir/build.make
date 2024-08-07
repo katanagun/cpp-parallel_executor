@@ -69,24 +69,52 @@ include src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
 
-src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
-src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp
-src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o"
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/main.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/main.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceA.cpp
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceA.cpp
 
-src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parallel_executor_lib.dir/main.cpp.i"
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp > CMakeFiles/parallel_executor_lib.dir/main.cpp.i
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.i"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceA.cpp > CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.i
 
-src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib.dir/main.cpp.s"
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp -o CMakeFiles/parallel_executor_lib.dir/main.cpp.s
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.s"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceA.cpp -o CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.s
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceB.cpp
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceB.cpp
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.i"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceB.cpp > CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.i
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.s"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceB.cpp -o CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.s
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.cpp
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.cpp
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.i"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.cpp > CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.i
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.s"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.cpp -o CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.s
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/StartedEvent.cpp
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o"
 	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/StartedEvent.cpp
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.i: cmake_force
@@ -100,7 +128,7 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.s: c
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DataEvent.cpp
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o"
 	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DataEvent.cpp
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.i: cmake_force
@@ -114,7 +142,7 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.s: cmak
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.cpp
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o"
 	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.cpp
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.i: cmake_force
@@ -125,23 +153,59 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.s"
 	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.cpp -o CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.s
 
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.cpp
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.cpp
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parallel_executor_lib.dir/Parser.cpp.i"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.cpp > CMakeFiles/parallel_executor_lib.dir/Parser.cpp.i
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib.dir/Parser.cpp.s"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.cpp -o CMakeFiles/parallel_executor_lib.dir/Parser.cpp.s
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/flags.make
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/EventQueue.cpp
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o -MF CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o.d -o CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/EventQueue.cpp
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.i"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/EventQueue.cpp > CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.i
+
+src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.s"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/EventQueue.cpp -o CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.s
+
 # Object files for target parallel_executor_lib
 parallel_executor_lib_OBJECTS = \
-"CMakeFiles/parallel_executor_lib.dir/main.cpp.o" \
+"CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o" \
+"CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o" \
+"CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o" \
 "CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o" \
 "CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o" \
-"CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o"
+"CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o" \
+"CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o" \
+"CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o"
 
 # External object files for target parallel_executor_lib
 parallel_executor_lib_EXTERNAL_OBJECTS =
 
-src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/main.cpp.o
+src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o
+src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o
+src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o
 src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o
 src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o
 src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o
+src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o
+src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o
 src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make
 src/parallel_executor/libparallel_executor_lib.a: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libparallel_executor_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libparallel_executor_lib.a"
 	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && $(CMAKE_COMMAND) -P CMakeFiles/parallel_executor_lib.dir/cmake_clean_target.cmake
 	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parallel_executor_lib.dir/link.txt --verbose=$(VERBOSE)
 

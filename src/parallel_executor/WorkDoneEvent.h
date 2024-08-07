@@ -8,9 +8,7 @@ class WorkDoneEvent : public DeviceEvent
 public:
   WorkDoneEvent(std::shared_ptr<Device> device);
   
-  std::string toString() const override{
-    return "Finished" + device.get()->getName();
-  };
+  std::string toString() const override;
 
 };
 

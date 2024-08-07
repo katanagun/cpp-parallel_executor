@@ -14,24 +14,9 @@
 class EventQueue
 {
 public:
-  void push(const std::shared_ptr<const Event> & event){
-    
-    std::unique_lock<std::mutex> lock(mutex);
-    queue.push(event);
-    cv.notify_one();
-  };
+  void push(const std::shared_ptr<const Event> & event);
   
-  std::shared_ptr<const Event> pop(const std::chrono::seconds & duration){
-    std::unique_lock<std::mutex> lock(mutex);
-    if (cv.wait_for(lock, duration, [this]{return !queue.empty(); })){
-      auto event = queue.front();
-      queue.pop();
-      return event;
-    }
-    else{
-      return nullptr;
-    }
-  };
+  std::shared_ptr<const Event> pop(const std::chrono::seconds & duration);
 
 private:
   std::queue<std::shared_ptr<const Event>> queue;

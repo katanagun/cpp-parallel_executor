@@ -8,9 +8,7 @@ class StartedEvent : public DeviceEvent
 public:
   StartedEvent(std::shared_ptr<Device> device);
   
-  std::string toString() const override {
-    return "Started " + device.get()->getName();
-  };
+  std::string toString() const override;
 
 };
 

@@ -64,17 +64,14 @@ CMAKE_BINARY_DIR = /home/bvahrin/tasks/cpp-parallel_executor/build
 
 # The main recursive "all" target.
 all: src/parallel_executor/all
-all: test/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/parallel_executor/preinstall
-preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: src/parallel_executor/clean
-clean: test/clean
 .PHONY : clean
 
 #=============================================================================
@@ -95,86 +92,18 @@ src/parallel_executor/clean: src/parallel_executor/CMakeFiles/parallel_executor_
 .PHONY : src/parallel_executor/clean
 
 #=============================================================================
-# Directory level rules for directory test
-
-# Recursive "all" directory target.
-test/all: test/CMakeFiles/test_app.dir/all
-test/all: test/googletest/all
-.PHONY : test/all
-
-# Recursive "preinstall" directory target.
-test/preinstall: test/googletest/preinstall
-.PHONY : test/preinstall
-
-# Recursive "clean" directory target.
-test/clean: test/CMakeFiles/test_app.dir/clean
-test/clean: test/googletest/clean
-.PHONY : test/clean
-
-#=============================================================================
-# Directory level rules for directory test/googletest
-
-# Recursive "all" directory target.
-test/googletest/all: test/googletest/googlemock/all
-.PHONY : test/googletest/all
-
-# Recursive "preinstall" directory target.
-test/googletest/preinstall: test/googletest/googlemock/preinstall
-.PHONY : test/googletest/preinstall
-
-# Recursive "clean" directory target.
-test/googletest/clean: test/googletest/googlemock/clean
-.PHONY : test/googletest/clean
-
-#=============================================================================
-# Directory level rules for directory test/googletest/googlemock
-
-# Recursive "all" directory target.
-test/googletest/googlemock/all: test/googletest/googlemock/CMakeFiles/gmock.dir/all
-test/googletest/googlemock/all: test/googletest/googlemock/CMakeFiles/gmock_main.dir/all
-test/googletest/googlemock/all: test/googletest/googletest/all
-.PHONY : test/googletest/googlemock/all
-
-# Recursive "preinstall" directory target.
-test/googletest/googlemock/preinstall: test/googletest/googletest/preinstall
-.PHONY : test/googletest/googlemock/preinstall
-
-# Recursive "clean" directory target.
-test/googletest/googlemock/clean: test/googletest/googlemock/CMakeFiles/gmock.dir/clean
-test/googletest/googlemock/clean: test/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
-test/googletest/googlemock/clean: test/googletest/googletest/clean
-.PHONY : test/googletest/googlemock/clean
-
-#=============================================================================
-# Directory level rules for directory test/googletest/googletest
-
-# Recursive "all" directory target.
-test/googletest/googletest/all: test/googletest/googletest/CMakeFiles/gtest.dir/all
-test/googletest/googletest/all: test/googletest/googletest/CMakeFiles/gtest_main.dir/all
-.PHONY : test/googletest/googletest/all
-
-# Recursive "preinstall" directory target.
-test/googletest/googletest/preinstall:
-.PHONY : test/googletest/googletest/preinstall
-
-# Recursive "clean" directory target.
-test/googletest/googletest/clean: test/googletest/googletest/CMakeFiles/gtest.dir/clean
-test/googletest/googletest/clean: test/googletest/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : test/googletest/googletest/clean
-
-#=============================================================================
 # Target rules for target src/parallel_executor/CMakeFiles/parallel_executor_lib.dir
 
 # All Build rule for target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target parallel_executor_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target parallel_executor_lib"
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all
 
 # Build rule for subdir invocation for target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule
@@ -195,12 +124,12 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/clean:
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/all: src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=14,15 "Built target parallel_executor_lib_executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=10,11 "Built target parallel_executor_lib_executable"
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/all
 
 # Build rule for subdir invocation for target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule
@@ -213,140 +142,6 @@ parallel_executor_lib_executable: src/parallel_executor/CMakeFiles/parallel_exec
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/test_app.dir
-
-# All Build rule for target.
-test/CMakeFiles/test_app.dir/all: test/googletest/googlemock/CMakeFiles/gmock.dir/all
-test/CMakeFiles/test_app.dir/all: test/googletest/googlemock/CMakeFiles/gmock_main.dir/all
-test/CMakeFiles/test_app.dir/all: test/googletest/googletest/CMakeFiles/gtest.dir/all
-test/CMakeFiles/test_app.dir/all: test/googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_app.dir/build.make test/CMakeFiles/test_app.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_app.dir/build.make test/CMakeFiles/test_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=16,17 "Built target test_app"
-.PHONY : test/CMakeFiles/test_app.dir/all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/test_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/test_app.dir/rule
-
-# Convenience name for target.
-test_app: test/CMakeFiles/test_app.dir/rule
-.PHONY : test_app
-
-# clean rule for target.
-test/CMakeFiles/test_app.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_app.dir/build.make test/CMakeFiles/test_app.dir/clean
-.PHONY : test/CMakeFiles/test_app.dir/clean
-
-#=============================================================================
-# Target rules for target test/googletest/googlemock/CMakeFiles/gmock.dir
-
-# All Build rule for target.
-test/googletest/googlemock/CMakeFiles/gmock.dir/all: test/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f test/googletest/googlemock/CMakeFiles/gmock.dir/build.make test/googletest/googlemock/CMakeFiles/gmock.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/googletest/googlemock/CMakeFiles/gmock.dir/build.make test/googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=1,2 "Built target gmock"
-.PHONY : test/googletest/googlemock/CMakeFiles/gmock.dir/all
-
-# Build rule for subdir invocation for target.
-test/googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/googletest/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
-.PHONY : test/googletest/googlemock/CMakeFiles/gmock.dir/rule
-
-# Convenience name for target.
-gmock: test/googletest/googlemock/CMakeFiles/gmock.dir/rule
-.PHONY : gmock
-
-# clean rule for target.
-test/googletest/googlemock/CMakeFiles/gmock.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/googletest/googlemock/CMakeFiles/gmock.dir/build.make test/googletest/googlemock/CMakeFiles/gmock.dir/clean
-.PHONY : test/googletest/googlemock/CMakeFiles/gmock.dir/clean
-
-#=============================================================================
-# Target rules for target test/googletest/googlemock/CMakeFiles/gmock_main.dir
-
-# All Build rule for target.
-test/googletest/googlemock/CMakeFiles/gmock_main.dir/all: test/googletest/googlemock/CMakeFiles/gmock.dir/all
-test/googletest/googlemock/CMakeFiles/gmock_main.dir/all: test/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f test/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make test/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make test/googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
-.PHONY : test/googletest/googlemock/CMakeFiles/gmock_main.dir/all
-
-# Build rule for subdir invocation for target.
-test/googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/googletest/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
-.PHONY : test/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
-
-# Convenience name for target.
-gmock_main: test/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
-.PHONY : gmock_main
-
-# clean rule for target.
-test/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make test/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
-.PHONY : test/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
-
-#=============================================================================
-# Target rules for target test/googletest/googletest/CMakeFiles/gtest.dir
-
-# All Build rule for target.
-test/googletest/googletest/CMakeFiles/gtest.dir/all:
-	$(MAKE) $(MAKESILENT) -f test/googletest/googletest/CMakeFiles/gtest.dir/build.make test/googletest/googletest/CMakeFiles/gtest.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/googletest/googletest/CMakeFiles/gtest.dir/build.make test/googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=5,6 "Built target gtest"
-.PHONY : test/googletest/googletest/CMakeFiles/gtest.dir/all
-
-# Build rule for subdir invocation for target.
-test/googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
-.PHONY : test/googletest/googletest/CMakeFiles/gtest.dir/rule
-
-# Convenience name for target.
-gtest: test/googletest/googletest/CMakeFiles/gtest.dir/rule
-.PHONY : gtest
-
-# clean rule for target.
-test/googletest/googletest/CMakeFiles/gtest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/googletest/googletest/CMakeFiles/gtest.dir/build.make test/googletest/googletest/CMakeFiles/gtest.dir/clean
-.PHONY : test/googletest/googletest/CMakeFiles/gtest.dir/clean
-
-#=============================================================================
-# Target rules for target test/googletest/googletest/CMakeFiles/gtest_main.dir
-
-# All Build rule for target.
-test/googletest/googletest/CMakeFiles/gtest_main.dir/all: test/googletest/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f test/googletest/googletest/CMakeFiles/gtest_main.dir/build.make test/googletest/googletest/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/googletest/googletest/CMakeFiles/gtest_main.dir/build.make test/googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
-.PHONY : test/googletest/googletest/CMakeFiles/gtest_main.dir/all
-
-# Build rule for subdir invocation for target.
-test/googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
-.PHONY : test/googletest/googletest/CMakeFiles/gtest_main.dir/rule
-
-# Convenience name for target.
-gtest_main: test/googletest/googletest/CMakeFiles/gtest_main.dir/rule
-.PHONY : gtest_main
-
-# clean rule for target.
-test/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/googletest/googletest/CMakeFiles/gtest_main.dir/build.make test/googletest/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : test/googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

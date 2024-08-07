@@ -3,10 +3,6 @@
 
 #include "EventQueue.h"
 #include "Device.h"
-#include "StartedEvent.h"
-#include "DataEvent.h"
-#include "WorkDoneEvent.h"
-#include "DeviceEvent.h"
 
 #include <thread>
 #include <chrono>
@@ -31,19 +27,7 @@ public:
    * \param crush_index_A Целое число, указывающая на какой итерации сломается устройство А.
    * \param crush_index_B Целое число, указывающая на какой итерации сломается устройство B.
   */
-  void run(size_t loop_count_A, size_t loop_count_B, int crush_index_A = -1, int crush_index_B = -1){
-    std::thread thread_A([this, loop_count_A, crush_index_A]() {
-        read(A, std::chrono::seconds(2), loop_count_A, crush_index_A);
-    });
-
-    std::thread thread_B([this, loop_count_B, crush_index_B]() {
-        read(B, std::chrono::seconds(2), loop_count_B, crush_index_B);
-    });
-
-    thread_A.join();
-    thread_B.join();
-    
-  };
+  void run(size_t loop_count_A, size_t loop_count_B, int crush_index_A = -1, int crush_index_B = -1);
 
 private:
   /*!
@@ -54,25 +38,7 @@ private:
    * \param loop_count Беззнаковое целое число, задающее кол-во итераций чтения с устройства.
    * \param crush_index Целое число, указывающая на какой итерации сломается устройство.
   */
-  void read(std::shared_ptr<Device> device, std::chrono::seconds sleep_duration, size_t loop_count, int crush_index){
-    // Создание умных указателей
-    std::shared_ptr<const Event> event_start = std::make_shared<const StartedEvent>(device);
-    std::shared_ptr<const Event> event_done = std::make_shared<const WorkDoneEvent>(device);
-    std::shared_ptr<const Event> event_data = std::make_shared<const DataEvent>(device);
-
-    queue.get()->push(event_start);
-    for (int i = 0; i < loop_count; i++){
-      std::this_thread::sleep_for(std::chrono::seconds(sleep_duration));
-      if (i == crush_index){
-        break;
-      }
-      else{
-        queue->push(event_data);
-      }
-      
-    }
-    queue->push(event_done);
-  };
+  void read(std::shared_ptr<Device> device, std::chrono::seconds sleep_duration, size_t loop_count, int crush_index);
 
 private:   
   std::shared_ptr<EventQueue> queue;

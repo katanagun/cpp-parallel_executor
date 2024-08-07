@@ -1,0 +1,85 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src/parallel_executor",
+					"jsonFile" : "directory-src.parallel_executor-96664e2c545a941db5c4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/parallel_executor",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "parallel_executor",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "parallel_executor_lib::@7e6648cdf4f20bde3266",
+					"jsonFile" : "target-parallel_executor_lib-de9846b856aa1e619582.json",
+					"name" : "parallel_executor_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "parallel_executor_lib_executable::@7e6648cdf4f20bde3266",
+					"jsonFile" : "target-parallel_executor_lib_executable-06c82626a6b7c80f9f55.json",
+					"name" : "parallel_executor_lib_executable",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bvahrin/tasks/cpp-parallel_executor/build",
+		"source" : "/home/bvahrin/tasks/cpp-parallel_executor"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

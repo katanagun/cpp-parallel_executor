@@ -1,11 +1,17 @@
 cmake_minimum_required(VERSION 3.15.0)
 
 add_library(parallel_executor_lib STATIC
-main.cpp
+DeviceA.cpp
+DeviceB.cpp
+DeviceEvent.cpp
 StartedEvent.cpp
 DataEvent.cpp
 WorkDoneEvent.cpp
+Parser.cpp
+EventQueue.cpp
+StartedEvent.h
 DataEvent.h
+WorkDoneEvent.h
 Device.h
 DeviceA.h
 DeviceB.h
