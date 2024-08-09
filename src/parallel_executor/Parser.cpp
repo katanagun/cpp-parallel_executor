@@ -22,7 +22,7 @@ void Parser::read(std::shared_ptr<Device> device, std::chrono::seconds sleep_dur
     std::shared_ptr<const Event> event_done = std::make_shared<WorkDoneEvent>(device);
     std::shared_ptr<const Event> event_data = std::make_shared<DataEvent>(device);
 
-    queue.get()->push(event_start);
+    queue->push(event_start);
     std::this_thread::sleep_for(std::chrono::seconds(sleep_duration));
     for (int i = 0; i < loop_count; i++){
       std::this_thread::sleep_for(std::chrono::seconds(sleep_duration));

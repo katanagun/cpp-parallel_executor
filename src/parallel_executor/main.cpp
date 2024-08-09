@@ -20,7 +20,7 @@ int main() {
 
     // Основной поток разбирает и обрабатывает данные из очереди
     while (true) {
-        std::shared_ptr<const Event> event = eventQueue.get()->pop(duration);
+        std::shared_ptr<const Event> event = eventQueue->pop(duration);
         if (event == nullptr) {
             break;
         }
