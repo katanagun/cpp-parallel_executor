@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240809-1636-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.28.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="bvahrim-ub24"
+	OSRelease="6.8.0-39-generic"
+	OSVersion="#39-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul  5 21:49:14 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="15"
+	ModelID="6"
+	ProcessorCacheSize="16384"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="7941"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2000"
+	>
+	<Testing>
+		<StartDateTime>Aug 09 19:36 MSK</StartDateTime>
+		<StartTestTime>1723221374</StartTestTime>
+		<TestList/>
+		<EndDateTime>Aug 09 19:36 MSK</EndDateTime>
+		<EndTestTime>1723221374</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

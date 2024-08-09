@@ -5,9 +5,7 @@
 
 #include <memory>
 #include <chrono>
-
 #include <queue>
-
 #include <mutex>
 #include <condition_variable>
 

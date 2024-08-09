@@ -8,4 +8,4 @@ include_directories(${CMAKE_SOURCE_DIR}/src/parallel_executor)
 enable_testing()
 
 add_subdirectory(src/parallel_executor)
-#add_subdirectory(test)
+add_subdirectory(test)

@@ -13,14 +13,14 @@ public:
    *
    * \return Строка. Имя устройства.
   */
-  virtual std::string getName();
+  virtual std::string getName() = 0;
 
   /*!
    * \brief Симулирует чтение данных.
    *
    * \return Строка. Прочитанные данные.
   */
-  virtual std::string getDataAsString();
+  virtual std::string getDataAsString() = 0;
 };
 
 #endif

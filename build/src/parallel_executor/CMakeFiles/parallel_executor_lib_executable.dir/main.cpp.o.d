@@ -172,6 +172,8 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o
  /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Device.h \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceA.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceB.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
