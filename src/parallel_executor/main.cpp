@@ -24,7 +24,7 @@ int main() {
         if (event == nullptr) {
             break;
         }
-        std::cout << event.get()->toString() << std::endl;
+        std::cout << event->toString() << std::endl;
     }
 
     return 0;

@@ -8,34 +8,34 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/usr/bin/cmake",
-			"cpack" : "/usr/bin/cpack",
-			"ctest" : "/usr/bin/ctest",
-			"root" : "/usr/share/cmake-3.28"
+			"cmake" : "/snap/cmake/1409/bin/cmake",
+			"cpack" : "/snap/cmake/1409/bin/cpack",
+			"ctest" : "/snap/cmake/1409/bin/ctest",
+			"root" : "/snap/cmake/1409/share/cmake-3.30"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 28,
-			"patch" : 3,
-			"string" : "3.28.3",
+			"minor" : 30,
+			"patch" : 2,
+			"string" : "3.30.2",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-698687fee2424c6fda64.json",
+			"jsonFile" : "codemodel-v2-e8b7d0fa92ed82ed813f.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 6
+				"minor" : 7
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-924cb5e53260c4947fa1.json",
+			"jsonFile" : "cache-v2-27e89887b222e4b0b132.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,12 +44,12 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-a419664ec668c0126dd9.json",
+			"jsonFile" : "cmakeFiles-v1-17167e5cdf7ae46c8db2.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
 				"major" : 1,
-				"minor" : 0
+				"minor" : 1
 			}
 		},
 		{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-924cb5e53260c4947fa1.json",
+						"jsonFile" : "cache-v2-27e89887b222e4b0b132.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,12 +99,12 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-698687fee2424c6fda64.json",
+						"jsonFile" : "codemodel-v2-e8b7d0fa92ed82ed813f.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
 							"major" : 2,
-							"minor" : 6
+							"minor" : 7
 						}
 					},
 					{
@@ -117,12 +117,12 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-a419664ec668c0126dd9.json",
+						"jsonFile" : "cmakeFiles-v1-17167e5cdf7ae46c8db2.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{
 							"major" : 1,
-							"minor" : 0
+							"minor" : 1
 						}
 					}
 				]
