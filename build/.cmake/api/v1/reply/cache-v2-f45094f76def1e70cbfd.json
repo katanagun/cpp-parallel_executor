@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/programming/cpp-parallel_executor/build"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "30"
+			"value" : "28"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1409/bin/cmake"
+			"value" : "/usr/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1409/bin/cpack"
+			"value" : "/usr/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1409/bin/ctest"
+			"value" : "/usr/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -418,18 +418,6 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
-			"name" : "CMAKE_EDIT_COMMAND",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to cache edit program executable."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1409/bin/ccmake"
-		},
-		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -559,7 +547,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bogdan/programming/cpp-parallel_executor/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -619,7 +607,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bogdan/programming/cpp-parallel_executor"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -967,7 +955,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1409/share/cmake-3.30"
+			"value" : "/usr/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1243,7 +1231,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bogdan/programming/cpp-parallel_executor/build"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor/build"
 		},
 		{
 			"name" : "parallel_executor_IS_TOP_LEVEL",
@@ -1267,7 +1255,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bogdan/programming/cpp-parallel_executor"
+			"value" : "/home/bvahrin/tasks/cpp-parallel_executor"
 		}
 	],
 	"kind" : "cache",

@@ -5,7 +5,7 @@ std::string DeviceB::getName(){
 }
 
 std::string DeviceB::getDataAsString() {
-  srand(time(NULL));
+    srand(time(NULL));
     std::string result;
     int number1 = rand() % 199;
     int number2 = rand() % 199;

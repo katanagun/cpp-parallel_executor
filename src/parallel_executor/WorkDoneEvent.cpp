@@ -3,5 +3,5 @@
 WorkDoneEvent::WorkDoneEvent(std::shared_ptr<Device> device) : DeviceEvent(device) {}
 
 std::string WorkDoneEvent::toString() const {
-    return "Finished " + device->getName();
+    return "Finished " + device.get()->getName();
 }

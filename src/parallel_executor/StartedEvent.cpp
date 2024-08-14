@@ -4,5 +4,5 @@
 StartedEvent::StartedEvent(std::shared_ptr<Device> device) : DeviceEvent(device) {}
 
 std::string StartedEvent::toString() const {
-    return "Started " + device->getName();
+    return "Started " + device.get()->getName();
 }

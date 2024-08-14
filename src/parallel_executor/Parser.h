@@ -6,7 +6,6 @@
 
 #include <thread>
 #include <chrono>
-#include <mutex>
 
 class Parser
 {
@@ -45,7 +44,6 @@ private:
   std::shared_ptr<EventQueue> queue;
   std::shared_ptr<Device> A;
   std::shared_ptr<Device> B;
-  std::mutex mtx;
 };
 
 #endif

@@ -1,8 +1,8 @@
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o: \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/DeviceB.cpp \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceB.cpp \
  /usr/include/stdc-predef.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/DeviceB.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/Device.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceB.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Device.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

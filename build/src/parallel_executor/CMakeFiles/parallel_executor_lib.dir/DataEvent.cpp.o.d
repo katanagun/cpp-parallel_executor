@@ -1,9 +1,9 @@
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o: \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/DataEvent.cpp \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DataEvent.cpp \
  /usr/include/stdc-predef.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/DataEvent.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/DeviceEvent.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/Event.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DataEvent.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Event.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -118,7 +118,7 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/Device.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Device.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \

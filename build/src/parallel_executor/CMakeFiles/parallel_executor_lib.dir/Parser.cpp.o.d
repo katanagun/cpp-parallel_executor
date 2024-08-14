@@ -1,9 +1,9 @@
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o: \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/Parser.cpp \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.cpp \
  /usr/include/stdc-predef.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/Parser.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/EventQueue.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/Event.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Parser.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/EventQueue.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Event.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -169,13 +169,13 @@ src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o: \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
  /usr/include/c++/13/condition_variable \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/Device.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/Device.h \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/StartedEvent.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/DeviceEvent.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/DataEvent.h \
- /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/StartedEvent.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DeviceEvent.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/DataEvent.h \
+ /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/WorkDoneEvent.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \

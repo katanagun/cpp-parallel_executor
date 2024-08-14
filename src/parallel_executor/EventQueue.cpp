@@ -9,10 +9,9 @@ void EventQueue::push(const std::shared_ptr<const Event>& event) {
 std::shared_ptr<const Event> EventQueue::pop(const std::chrono::seconds& duration) {
     std::unique_lock<std::mutex> lock(mutex);
     if (cv.wait_for(lock, duration, [this] { return !queue.empty(); })) {
-        std::shared_ptr<const Event> event = queue.front();
+        auto event = queue.front();
         queue.pop();
         return event;
-    } else {
-        return nullptr;
-    }
+    } 
+    return nullptr;
 }

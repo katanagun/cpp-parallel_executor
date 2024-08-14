@@ -1,4 +1,4 @@
-# Install script for directory: /home/bogdan/programming/cpp-parallel_executor/src/parallel_executor
+# Install script for directory: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,7 +37,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
