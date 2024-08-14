@@ -14,20 +14,7 @@ int main() {
     std::shared_ptr<EventQueue> eventQueue = std::make_shared<EventQueue>();
     Parser parser(eventQueue, A, B);
 
-    parser.run(5, 7, 3, 4);
-
-    while (true){
-        std::shared_ptr<const Event> event = eventQueue->pop(std::chrono::seconds(5));
-        std::cout << event->toString() << std::endl;
-        if (event)
-        {
-            std::cout << event->toString() << std::endl;
-        }
-        else{
-            break;
-        }
-        
-    }
+    parser.run(4, 7, 3, 4);
 
     return 0;
 }

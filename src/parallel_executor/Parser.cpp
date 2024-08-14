@@ -8,10 +8,21 @@
 Parser::Parser(std::shared_ptr<EventQueue> queue, std::shared_ptr<Device> A, std::shared_ptr<Device> B) 
   : queue(queue), A(A), B(B) {}
 
+std::shared_ptr<const Event> event;
+
 void Parser::run(size_t loop_count_A, size_t loop_count_B, int crush_index_A, int crush_index_B)
 {
   std::thread thread_A(&Parser::read, this, A, std::chrono::seconds(1), loop_count_A, crush_index_A);
   std::thread thread_B(&Parser::read, this, B, std::chrono::seconds(5), loop_count_B, crush_index_B);
+
+
+  while (queue->pop(std::chrono::seconds(5))) {
+        if (!event) {
+            break;
+        } else {
+            std::cout << event->toString() << std::endl;
+        }
+  }
   
   thread_A.join();
   thread_B.join();
