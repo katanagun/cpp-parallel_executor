@@ -20,13 +20,14 @@ void Parser::run(size_t loop_count_A, size_t loop_count_B, int crush_index_A, in
 
 void Parser::read(std::shared_ptr<Device> device, std::chrono::seconds sleep_duration, size_t loop_count, int crush_index)
 {
+  std::unique_lock<std::mutex> lock(mtx);
     bool flag = false;
     queue->push(std::make_shared<StartedEvent>(device));
     std::this_thread::sleep_for(std::chrono::seconds(sleep_duration));
     for (int i = 0; i < loop_count; i++){
       std::this_thread::sleep_for(std::chrono::seconds(sleep_duration));
       if (i == crush_index){
-        queue->push(nullptr);
+        queue->push(std::make_shared<WorkDoneEvent>(device));
         flag = true;
         break;
       }
@@ -37,7 +38,7 @@ void Parser::read(std::shared_ptr<Device> device, std::chrono::seconds sleep_dur
     }
     if (flag == false){
       std::this_thread::sleep_for(std::chrono::seconds(sleep_duration));
-      queue->push(nullptr);
+      queue->push(std::make_shared<WorkDoneEvent>(device));
     }
     
 
