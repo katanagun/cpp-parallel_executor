@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bvahrin/tasks/cpp-parallel_executor
+CMAKE_SOURCE_DIR = /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bvahrin/tasks/cpp-parallel_executor/build
+CMAKE_BINARY_DIR = /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -95,16 +95,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor//CMakeFiles/progress.marks
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles 0
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/CMakeFiles /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor//CMakeFiles/progress.marks
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/clean
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/preinstall
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/preinstall
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/rule
 
 # Convenience name for target.
@@ -137,12 +182,12 @@ parallel_executor_lib: src/parallel_executor/CMakeFiles/parallel_executor_lib.di
 
 # fast build rule for target.
 parallel_executor_lib/fast:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build
 .PHONY : parallel_executor_lib/fast
 
 # Convenience name for target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/rule
 
 # Convenience name for target.
@@ -151,7 +196,7 @@ parallel_executor_lib_executable: src/parallel_executor/CMakeFiles/parallel_exec
 
 # fast build rule for target.
 parallel_executor_lib_executable/fast:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build
 .PHONY : parallel_executor_lib_executable/fast
 
 DataEvent.o: DataEvent.cpp.o
@@ -159,7 +204,7 @@ DataEvent.o: DataEvent.cpp.o
 
 # target to build an object file
 DataEvent.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.o
 .PHONY : DataEvent.cpp.o
 
 DataEvent.i: DataEvent.cpp.i
@@ -167,7 +212,7 @@ DataEvent.i: DataEvent.cpp.i
 
 # target to preprocess a source file
 DataEvent.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.i
 .PHONY : DataEvent.cpp.i
 
 DataEvent.s: DataEvent.cpp.s
@@ -175,7 +220,7 @@ DataEvent.s: DataEvent.cpp.s
 
 # target to generate assembly for a file
 DataEvent.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DataEvent.cpp.s
 .PHONY : DataEvent.cpp.s
 
 DeviceA.o: DeviceA.cpp.o
@@ -183,7 +228,7 @@ DeviceA.o: DeviceA.cpp.o
 
 # target to build an object file
 DeviceA.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.o
 .PHONY : DeviceA.cpp.o
 
 DeviceA.i: DeviceA.cpp.i
@@ -191,7 +236,7 @@ DeviceA.i: DeviceA.cpp.i
 
 # target to preprocess a source file
 DeviceA.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.i
 .PHONY : DeviceA.cpp.i
 
 DeviceA.s: DeviceA.cpp.s
@@ -199,7 +244,7 @@ DeviceA.s: DeviceA.cpp.s
 
 # target to generate assembly for a file
 DeviceA.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceA.cpp.s
 .PHONY : DeviceA.cpp.s
 
 DeviceB.o: DeviceB.cpp.o
@@ -207,7 +252,7 @@ DeviceB.o: DeviceB.cpp.o
 
 # target to build an object file
 DeviceB.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.o
 .PHONY : DeviceB.cpp.o
 
 DeviceB.i: DeviceB.cpp.i
@@ -215,7 +260,7 @@ DeviceB.i: DeviceB.cpp.i
 
 # target to preprocess a source file
 DeviceB.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.i
 .PHONY : DeviceB.cpp.i
 
 DeviceB.s: DeviceB.cpp.s
@@ -223,7 +268,7 @@ DeviceB.s: DeviceB.cpp.s
 
 # target to generate assembly for a file
 DeviceB.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceB.cpp.s
 .PHONY : DeviceB.cpp.s
 
 DeviceEvent.o: DeviceEvent.cpp.o
@@ -231,7 +276,7 @@ DeviceEvent.o: DeviceEvent.cpp.o
 
 # target to build an object file
 DeviceEvent.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.o
 .PHONY : DeviceEvent.cpp.o
 
 DeviceEvent.i: DeviceEvent.cpp.i
@@ -239,7 +284,7 @@ DeviceEvent.i: DeviceEvent.cpp.i
 
 # target to preprocess a source file
 DeviceEvent.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.i
 .PHONY : DeviceEvent.cpp.i
 
 DeviceEvent.s: DeviceEvent.cpp.s
@@ -247,7 +292,7 @@ DeviceEvent.s: DeviceEvent.cpp.s
 
 # target to generate assembly for a file
 DeviceEvent.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/DeviceEvent.cpp.s
 .PHONY : DeviceEvent.cpp.s
 
 EventQueue.o: EventQueue.cpp.o
@@ -255,7 +300,7 @@ EventQueue.o: EventQueue.cpp.o
 
 # target to build an object file
 EventQueue.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.o
 .PHONY : EventQueue.cpp.o
 
 EventQueue.i: EventQueue.cpp.i
@@ -263,7 +308,7 @@ EventQueue.i: EventQueue.cpp.i
 
 # target to preprocess a source file
 EventQueue.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.i
 .PHONY : EventQueue.cpp.i
 
 EventQueue.s: EventQueue.cpp.s
@@ -271,7 +316,7 @@ EventQueue.s: EventQueue.cpp.s
 
 # target to generate assembly for a file
 EventQueue.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/EventQueue.cpp.s
 .PHONY : EventQueue.cpp.s
 
 Parser.o: Parser.cpp.o
@@ -279,7 +324,7 @@ Parser.o: Parser.cpp.o
 
 # target to build an object file
 Parser.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.o
 .PHONY : Parser.cpp.o
 
 Parser.i: Parser.cpp.i
@@ -287,7 +332,7 @@ Parser.i: Parser.cpp.i
 
 # target to preprocess a source file
 Parser.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.i
 .PHONY : Parser.cpp.i
 
 Parser.s: Parser.cpp.s
@@ -295,7 +340,7 @@ Parser.s: Parser.cpp.s
 
 # target to generate assembly for a file
 Parser.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/Parser.cpp.s
 .PHONY : Parser.cpp.s
 
 StartedEvent.o: StartedEvent.cpp.o
@@ -303,7 +348,7 @@ StartedEvent.o: StartedEvent.cpp.o
 
 # target to build an object file
 StartedEvent.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.o
 .PHONY : StartedEvent.cpp.o
 
 StartedEvent.i: StartedEvent.cpp.i
@@ -311,7 +356,7 @@ StartedEvent.i: StartedEvent.cpp.i
 
 # target to preprocess a source file
 StartedEvent.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.i
 .PHONY : StartedEvent.cpp.i
 
 StartedEvent.s: StartedEvent.cpp.s
@@ -319,7 +364,7 @@ StartedEvent.s: StartedEvent.cpp.s
 
 # target to generate assembly for a file
 StartedEvent.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/StartedEvent.cpp.s
 .PHONY : StartedEvent.cpp.s
 
 WorkDoneEvent.o: WorkDoneEvent.cpp.o
@@ -327,7 +372,7 @@ WorkDoneEvent.o: WorkDoneEvent.cpp.o
 
 # target to build an object file
 WorkDoneEvent.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.o
 .PHONY : WorkDoneEvent.cpp.o
 
 WorkDoneEvent.i: WorkDoneEvent.cpp.i
@@ -335,7 +380,7 @@ WorkDoneEvent.i: WorkDoneEvent.cpp.i
 
 # target to preprocess a source file
 WorkDoneEvent.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.i
 .PHONY : WorkDoneEvent.cpp.i
 
 WorkDoneEvent.s: WorkDoneEvent.cpp.s
@@ -343,7 +388,7 @@ WorkDoneEvent.s: WorkDoneEvent.cpp.s
 
 # target to generate assembly for a file
 WorkDoneEvent.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib.dir/WorkDoneEvent.cpp.s
 .PHONY : WorkDoneEvent.cpp.s
 
 main.o: main.cpp.o
@@ -351,7 +396,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -359,7 +404,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -367,7 +412,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(MAKE) $(MAKESILENT) -f src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -377,6 +422,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... parallel_executor_lib"
@@ -419,6 +468,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

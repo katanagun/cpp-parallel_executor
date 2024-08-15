@@ -16,9 +16,9 @@ TEST(EventQueue, OnePushPopTest)
   std::shared_ptr<EventQueue> queue = std::make_shared<EventQueue>();
 
   std::shared_ptr<Device> device = std::make_shared<DeviceA>();
-  queue->push(std::move(std::make_shared<StartedEvent>(device)));
+  queue->push(std::make_shared<StartedEvent>(device));
 
-  std::shared_ptr<const Event> event = queue->pop(std::chrono::seconds(0));
+  std::shared_ptr<const Event> event = queue->pop(std::chrono::seconds(1));
 
   ASSERT_NE(event, nullptr);
   ASSERT_NE(dynamic_cast<const StartedEvent *>(event.get()), nullptr);
@@ -31,7 +31,7 @@ TEST(EventQueue, SomePushPopTest)
   size_t loop = 5;
   std::shared_ptr<Device> device = std::make_shared<DeviceA>();
   for (size_t i = 0; i < loop; ++i)
-    queue->push(std::move(std::make_shared<StartedEvent>(device)));
+    queue->push(std::make_shared<StartedEvent>(device));
 
   for (size_t i = 0; i < loop; ++i)
   {
@@ -47,11 +47,11 @@ TEST(EventQueue, PushPopOrderTest)
 
   std::shared_ptr<Device> device = std::make_shared<DeviceA>();
 
-  queue->push(std::move(std::make_shared<StartedEvent>(device)));
-  queue->push(std::move(std::make_shared<DataEvent>(device)));
-  queue->push(std::move(std::make_shared<WorkDoneEvent>(device)));
-  queue->push(std::move(std::make_shared<DataEvent>(device)));
-  queue->push(std::move(std::make_shared<StartedEvent>(device)));
+  queue->push(std::make_shared<StartedEvent>(device));
+  queue->push(std::make_shared<DataEvent>(device));
+  queue->push(std::make_shared<WorkDoneEvent>(device));
+  queue->push(std::make_shared<DataEvent>(device));
+  queue->push(std::make_shared<StartedEvent>(device));
 
   std::shared_ptr<const Event> event = queue->pop(std::chrono::seconds(0));
   ASSERT_NE(event, nullptr);

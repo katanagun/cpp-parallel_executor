@@ -1,4 +1,4 @@
-# Install script for directory: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor
+# Install script for directory: /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/src/parallel_executor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

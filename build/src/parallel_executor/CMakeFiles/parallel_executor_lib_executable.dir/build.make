@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bvahrin/tasks/cpp-parallel_executor
+CMAKE_SOURCE_DIR = /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bvahrin/tasks/cpp-parallel_executor/build
+CMAKE_BINARY_DIR = /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build
 
 # Include any dependencies generated for this target.
 include src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/depend.make
@@ -70,18 +70,18 @@ include src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/pr
 include src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/flags.make
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/flags.make
-src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp
+src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o: /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/src/parallel_executor/main.cpp
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o: src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o"
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o -MF CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o.d -o CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o -MF CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o.d -o CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.o -c /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/src/parallel_executor/main.cpp
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.i"
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp > CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.i
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/src/parallel_executor/main.cpp > CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.i
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.s"
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor/main.cpp -o CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.s
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/src/parallel_executor/main.cpp -o CMakeFiles/parallel_executor_lib_executable.dir/main.cpp.s
 
 # Object files for target parallel_executor_lib_executable
 parallel_executor_lib_executable_OBJECTS = \
@@ -94,18 +94,18 @@ src/parallel_executor/parallel_executor_lib_executable: src/parallel_executor/CM
 src/parallel_executor/parallel_executor_lib_executable: src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build.make
 src/parallel_executor/parallel_executor_lib_executable: src/parallel_executor/libparallel_executor_lib.a
 src/parallel_executor/parallel_executor_lib_executable: src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable parallel_executor_lib_executable"
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parallel_executor_lib_executable.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable parallel_executor_lib_executable"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parallel_executor_lib_executable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build: src/parallel_executor/parallel_executor_lib_executable
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/build
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor && $(CMAKE_COMMAND) -P CMakeFiles/parallel_executor_lib_executable.dir/cmake_clean.cmake
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor && $(CMAKE_COMMAND) -P CMakeFiles/parallel_executor_lib_executable.dir/cmake_clean.cmake
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/clean
 
 src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/depend:
-	cd /home/bvahrin/tasks/cpp-parallel_executor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bvahrin/tasks/cpp-parallel_executor /home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor /home/bvahrin/tasks/cpp-parallel_executor/build /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor /home/bvahrin/tasks/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/src/parallel_executor /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor /home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/build/src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/parallel_executor/CMakeFiles/parallel_executor_lib_executable.dir/depend
 

@@ -12,8 +12,8 @@ TEST(Events, StartedEventTest)
   std::shared_ptr<Device> A = std::make_shared<DeviceA>();
   std::shared_ptr<Device> B = std::make_shared<DeviceB>();
 
-  EXPECT_EQ(StartedEvent(std::move(A)).toString(), "Started A");
-  EXPECT_EQ(StartedEvent(std::move(B)).toString(), "Started B");
+  EXPECT_EQ(StartedEvent(A).toString(), "Started A");
+  EXPECT_EQ(StartedEvent(B).toString(), "Started B");
 }
 
 TEST(Events, DataEventTest)
@@ -36,6 +36,6 @@ TEST(Events, WorkDoneEventTest)
   std::shared_ptr<Device> A = std::make_shared<DeviceA>();
   std::shared_ptr<Device> B = std::make_shared<DeviceB>();
 
-  EXPECT_EQ(WorkDoneEvent(std::move(A)).toString(), "Finished A");
-  EXPECT_EQ(WorkDoneEvent(std::move(B)).toString(), "Finished B");
+  EXPECT_EQ(WorkDoneEvent(A).toString(), "Finished A");
+  EXPECT_EQ(WorkDoneEvent(B).toString(), "Finished B");
 }

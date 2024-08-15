@@ -3,7 +3,7 @@
 void EventQueue::push(const std::shared_ptr<const Event>& event) {
     std::unique_lock<std::mutex> lock(mutex);
     queue.push(event);
-    cv.notify_one();
+    cv.notify_all();
 }
 
 std::shared_ptr<const Event> EventQueue::pop(const std::chrono::seconds& duration) {

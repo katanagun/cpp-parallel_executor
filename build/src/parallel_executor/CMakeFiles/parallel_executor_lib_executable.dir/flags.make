@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bvahrin/tasks/cpp-parallel_executor/src/parallel_executor
+CXX_INCLUDES = -I/home/bvahrin/tasks/cpp-parallel_executor/cpp-parallel_executor/src/parallel_executor
 
 CXX_FLAGS = 
 

@@ -101,7 +101,7 @@ TEST(Parser, InitWithEmptyQueueTest)
   std::shared_ptr<Device> B = std::make_shared<DeviceB>();
 
   EXPECT_THROW(
-    Parser(nullptr, std::move(A), std::move(B)),
+    Parser(nullptr, A, B),
     std::runtime_error
   );
 }
@@ -113,12 +113,12 @@ TEST(Parser, InitWithEmptyDevicesTest)
   std::shared_ptr<Device> B = std::make_shared<DeviceB>();
 
   EXPECT_THROW(
-    Parser(queue, nullptr, std::move(B)),
+    Parser(queue, nullptr, B),
     std::runtime_error
   );
 
   EXPECT_THROW(
-    Parser(queue, std::move(A), nullptr),
+    Parser(queue, A, nullptr),
     std::runtime_error
   );
 }
